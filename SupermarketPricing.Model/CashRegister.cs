@@ -13,14 +13,14 @@ namespace SupermarketPricing.Model
             var itemDictionary = new Dictionary<string, int>();
             foreach (var item in ShoppingCart.Items)
             {
-                if (itemDictionary.ContainsKey(item.Name))
+                if (itemDictionary.ContainsKey(item.Sku))
                 {
-                    var currentCount = itemDictionary.GetValueOrDefault(item.Name);
-                    itemDictionary[item.Name] = currentCount + 1;
+                    var currentCount = itemDictionary.GetValueOrDefault(item.Sku);
+                    itemDictionary[item.Sku] = currentCount + 1;
                 }
                 else
                 {
-                    itemDictionary.Add(item.Name, 1);
+                    itemDictionary.Add(item.Sku, 1);
                 }
             }
             foreach (var key in itemDictionary.Keys)

@@ -9,7 +9,7 @@ namespace SupermarketPricing.Model
 
         public int ComputePriceOfItemWithQuantity(string name, int quantity)
         {
-            var priceOffering = PriceOfferings.FirstOrDefault(offering => offering.Item.Name == name);
+            var priceOffering = PriceOfferings.FirstOrDefault(offering => offering.Item.Sku == name);
             if (string.IsNullOrEmpty(priceOffering.SpecialOffer))
                 return priceOffering.Price;
             else

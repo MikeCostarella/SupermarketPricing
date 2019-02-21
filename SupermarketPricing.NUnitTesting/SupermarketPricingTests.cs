@@ -19,25 +19,25 @@ namespace SupermarketPricing.NUnitTesting
                     {
                         new PriceOffering
                         {
-                            Item = new Item { Name = "A" },
+                            Item = new Item { Sku = "A" },
                             Price = 50,
                             SpecialOffer = "3 for 130"
                         },
                         new PriceOffering
                         {
-                            Item = new Item { Name = "B" },
+                            Item = new Item { Sku = "B" },
                             Price = 30,
                             SpecialOffer = "2 for 45"
                         },
                         new PriceOffering
                         {
-                            Item = new Item { Name = "C" },
+                            Item = new Item { Sku = "C" },
                             Price = 20,
                             SpecialOffer = ""
                         },
                         new PriceOffering
                         {
-                            Item = new Item { Name = "D" },
+                            Item = new Item { Sku = "D" },
                             Price = 15,
                             SpecialOffer = ""
                         }
@@ -54,10 +54,10 @@ namespace SupermarketPricing.NUnitTesting
             {
                 Items = new List<Item>
                 {
-                    new Item { Name = "A" },
-                    new Item { Name = "B" },
-                    new Item { Name = "C" },
-                    new Item { Name = "D" }
+                    new Item { Sku = "A" },
+                    new Item { Sku = "B" },
+                    new Item { Sku = "C" },
+                    new Item { Sku = "D" }
                 }
             };
             var cashRegister = new CashRegister
@@ -81,13 +81,13 @@ namespace SupermarketPricing.NUnitTesting
             {
                 Items = new List<Item>
                 {
-                    new Item { Name = "A" },
-                    new Item { Name = "A" },
-                    new Item { Name = "A" },
-                    new Item { Name = "B" },
-                    new Item { Name = "B" },
-                    new Item { Name = "C" },
-                    new Item { Name = "D" }
+                    new Item { Sku = "A" },
+                    new Item { Sku = "A" },
+                    new Item { Sku = "A" },
+                    new Item { Sku = "B" },
+                    new Item { Sku = "B" },
+                    new Item { Sku = "C" },
+                    new Item { Sku = "D" }
                 }
             };
             var cashRegister = new CashRegister
